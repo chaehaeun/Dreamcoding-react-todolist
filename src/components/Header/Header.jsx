@@ -8,7 +8,7 @@ const Header = ({ filters, filter, onFilterChange }) => {
 
   return (
     <header className={styles.header}>
-      <button onClick={toggleDarkMode}>
+      <button onClick={toggleDarkMode} className={styles.toggle}>
         {!darkMode ? <HiMoon /> : <HiSun />}
       </button>
       <ul className={styles.filters}>
